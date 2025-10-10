@@ -1,0 +1,67 @@
+Write the program to execute conversion of other datatype.
+
+Input Format
+
+input corresponds to the integer
+Constraints
+
+No constraints
+
+Output Format
+
+output corresponds to the ASCII values(character)
+Sample Input 0
+
+68
+Sample Output 0
+
+D
+Sample Input 1
+
+111
+Sample Output 1
+
+o
+Contest ends in 22 days
+Submissions: 190
+Max Score: 10
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+ 
+1
+import java.io.*;
+2
+import java.util.*;
+3
+import java.text.*;
+4
+import java.math.*;
+5
+import java.util.regex.*;
+6
+​
+7
+public class Solution {
+8
+​
+9
+    public static void main(String[] args) {
+10
+        Scanner s=new Scanner(System.in);
+11
+        int n=s.nextInt();
+12
+        char c=(char)n;
+13
+        System.out.print(c);
+14
+        
+15
+        
+16
+}
+17
+}
