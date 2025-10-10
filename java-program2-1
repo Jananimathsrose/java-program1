@@ -1,0 +1,58 @@
+John wants to know how to calculate the subject marks.could you please help him to learn marks calculation in programming.
+
+Input Format
+
+First input consists of String
+Second input consists of integer
+Third input consists of integer
+Fourth input consists of integer
+Fifth input consists of integer
+Sixth input consists of integer
+Constraints
+
+No Constraints
+
+Output Format
+
+Execute the total and Average Marks.
+Sample Input 0
+
+John
+100
+99
+100
+100
+99
+Sample Output 0
+
+Name of the Student:John
+Total marks:498
+Average marks:99.6
+
+
+
+
+  import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String name=s.nextLine();
+        int mark[]=new int[6];
+        int total=0;
+        for(int i=1;i<=5;i++){
+            mark[i]=s.nextInt();
+            total+=mark[i];
+        
+    }
+    System.out.println("Name of the Student:"+name);
+    System.out.println("Total marks:"+total);
+    System.out.println("Average marks:"+(float)total/5);
+    
+}
+}
