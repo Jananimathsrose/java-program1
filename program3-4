@@ -1,0 +1,72 @@
+Sela wants to learn the alphabets type to implements in the program.could you please her to implements the program.
+
+Input Format
+
+input consists of Character
+Constraints
+
+No Constraints
+
+Output Format
+
+if the Given input is A,print the statement is "Upper Case".
+if the Given input is a,print the statement is "Lower Case".
+if the Given input is 2,print the statement is "Number".
+if the Given input is &,print the statement is "Symbol".
+Sample Input 0
+
+A
+Sample Output 0
+
+The Given Character A is Upper Case...
+Sample Input 1
+
+a
+Sample Output 1
+
+The Given Character a is Lower Case...
+Sample Input 2
+
+4
+Sample Output 2
+
+The Given Character 4 is Number...
+Sample Input 3
+
+#
+Sample Output 3
+
+The Given Character # is Symbol...
+Contest ends in 22 days
+Submissions: 181
+Max Score: 10
+Difficulty: Medium
+Rate This Challenge:
+
+    
+More
+
+
+
+
+
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+        int num=s.nextInt();
+        int lastDigit=num%10;
+        int firstDigit=num;
+        while(firstDigit>=10){
+            firstDigit=firstDigit/10;
+        }
+         int result=firstDigit+lastDigit;
+            System.out.print(result);
+        }
+}
